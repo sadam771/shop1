@@ -1,0 +1,188 @@
+﻿<!--
+Author: maxupgrade - ahmed alimi - 771204505
+Author URL: https://www.facebook.com/MaxNet.yemen
+License URL: https://www.facebook.com/MaxNet.yemen
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>::شبكة تيرا نت اللاسلكية::</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="web/css/style.css" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style type="text/css">
+.auto-style1 {
+	color: #FFFFFF;
+}
+</style>
+<script>    
+function copyTextValue() {
+    var text1 = document.getElementById("username").value;
+    document.getElementById("password").value = text1;
+}
+</script>
+
+</head>
+<body>
+<font size="1">$(if chap-id)
+	</font>
+	<form name="sendin" action="$(link-login-only)" method="post">
+		<input type="hidden" name="username" />
+		<input type="hidden" name="password" />
+		<input type="hidden" name="dst" value="$(link-orig)" />
+		<input type="hidden" name="popup" value="true" />
+	</form>
+	<script type="text/javascript" src="/md5.js"></script>
+	<script type="text/javascript">
+	<!--
+	    function doLogin() {
+		document.sendin.username.value = document.login.username.value;
+		document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+		document.sendin.submit();
+		return false;
+	    }
+	//-->
+	</script>
+$(endif)
+<div class="wrap">	
+  <div class="header">
+     <div class="menu">
+						 <b><font color="#FFFFFF">
+						 <marquee direction="right" style="border: 1px solid #0804BA; color:#800000" bgcolor="#E3E3E3">مرحبا بكم في شبكة تيرا&nbsp; نت&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; للإشتراك او للإستفسار يرجى الاتصال على 700397221</marquee></font></b></div>
+	<div class="logo">
+		<a href="login.html">
+		<img src="web/images/Mlogo.png" alt="" width="321" height="168"></a>
+	</div>
+	<div class="clear"></div>
+  </div>
+  <div class="banner">
+	
+			<div class="lsidebar span_1_of_3">
+		<div class="login-title">
+           <h2 class="title">تسجيل الدخول</h2>
+				<div class="inline">
+<form name="login" action="$(link-login-only)" method="post" onSubmit="return doLogin()" style="text-align: center">
+	<input type="hidden" name="dst" value="$(link-orig)" /><input type="hidden" name="popup" value="true" />
+	
+	<div class="inttl" style="width: 100px;">
+		<p style="text-align: right"><font color="#FFFFFF">رمز الدخول</font></div>
+	<div class="initm" style="width: 270px;">
+		<input type="text" name="username" dir="ltr" value="$(username)" required maxlength="32" id="username" size="28" /></div>
+	<div class="inttl11111" style="width: 60px;"></div>
+	<div class="initm11" style="width: 130px;"><input style="width: 80px" name="password" type="hidden" id="password"/></div>
+	<input type="submit" class="btn cG" value="دخول" onclick="copyTextValue();"/>
+                       </form>
+		   			<p align="center"><font color="#FFFFFF">$(if error) 
+					
+						</font></p>
+					
+						<div class='Error' align="center">
+						
+						<font color="#FFFFFF">
+						
+						<script type="text/javascript">
+							var error = "$(error)";
+							if (error == "simultaneous session limit reached") {
+							document.write("المعذرة ، هذا الحساب مستخدم حالياً في جهاز آخر . ");
+							}
+							else if (error == "invalid password") {
+							document.write("اتصل بخدمة العملاء للتاكد من حسابك");
+							}
+							else if (error == "uptime limit reached") {
+							document.write("عذراً لقد انتهى الوقت المتاح لك..");
+							}
+							else if (error == "invalid username or password") {
+							document.write("تأكد من رمز الدخول");
+							}
+							else if(error.search("uptime limit") != -1) {
+							document.write("لقد انتهى رصيد هذا الحساب");	
+							}
+							else if (error.search(" traffic limit") != -1) {
+							document.write("لقد انتهى رصيد تحميل هذا الحساب");
+							}
+							else if (error == "no valid profile found") {
+							document.write("لفد انتهت صلاحية هذا الحساب .");
+							}
+							else if(error.search("not found") != -1) {
+							document.write("تأكد من رمز الدخول");	
+							}
+							else if (error == "invalid Calling-Station-Id") {
+							document.write("هذا الحساب مقترن بجهاز آخر...");
+							}
+							else document.write("$(error)<br />")
+							</script>
+						
+						</font>
+						
+						</div>
+					<p align="center"><font color="#FFFFFF">$(endif)
+
+					</font>
+
+					</div>
+					</form>
+</div>
+		</div>
+		</div>
+				<div class="cont span_2_of_3">
+					<div class="welcome-text">
+				       <img src="web/images/cards2.png" alt="" width="100%"/>
+					</div>
+					</div>
+				<div class="lsidebar span_1_of_3">
+				<img src="web/images/max-3.png">
+			 <div class="right-box">
+				<div class="right-box-grid">
+						<div class="right-box-grid-info" style="width: 815px; height: 37px">
+							<span>................</span>
+						</div>
+					</div>
+				 <div class="right-box-grid">
+						<div class="right-box-grid-info">
+							<span>بقالة فهمان الزريقي .. جوار محلات الزريقي</span></div>
+
+					</div>
+				 <div class="right-box-grid">
+						<div class="right-box-grid-info">
+							<span>بقالة  ركن االوليد.. جوار  جامعة دار السلام</span></div>
+
+					</div>
+					 <div class="right-box-grid">
+						<div class="right-box-grid-info">
+							&nbsp;<p>
+							 
+						</div>
+					</div>
+					<div class="right-box-grid">
+						<div class="right-box-grid-info">
+							<span></span>
+						</div>
+					</div>
+					<div class="right-box-grid">
+						<div class="right-box-grid-info">
+							<span></span>
+						</div>
+						<div class="right-box-grid-info">
+							&nbsp;</div>
+					</div>
+			</div>
+
+		</div>
+
+					
+			
+			<div class="clear"></div>			
+		 </div>
+	<div class="footer txt-center">
+		<p><a target="_blank" href="https://www.facebook.com/iq35.tera">
+					<img alt="Max Upgrade" title="تركيب وصيانة وتطوير الشبكات اللاسلكية" src="web/images/max-55.png" width="312" height="99"></a></p>
+		<div class="clear"></div>
+	</div>
+</div>
+<script type="text/javascript">
+<!--
+  document.login.username.focus();
+//-->
+</script>
+</body>
+</html>
